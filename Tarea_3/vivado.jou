@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 28 06:05:38 2022
+# Process ID: 18936
+# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18248 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Gitlab\Tarea_3\Tarea_3.xpr
+# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/vivado.log
+# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3\vivado.jou
+# Running On: LAPTOP-VMLVOQLM, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16505 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source TB_device.tcl
+relaunch_sim
+set_property is_enabled false [get_files  {D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.srcs/sources_1/imports/sources_1/AvgVecOperation.sv D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.srcs/sources_1/imports/sources_1/ManDisOperation.sv D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.srcs/sources_1/imports/sources_1/SumVecOperation.sv}]
+relaunch_sim
+relaunch_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mem_to_byte [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top device [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+close_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source TB_device.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source TB_device.tcl
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mem_to_byte [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_sim
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+refresh_design
+launch_simulation
+refresh_design
+launch_simulation
+refresh_design
+launch_simulation
+source TB_device.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

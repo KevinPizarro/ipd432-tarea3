@@ -1,8 +1,8 @@
 module device import master_state_enum::*; #(
     parameter CLK_FREQUENCY = 100_000_000,
 	parameter BAUD_RATE = 115_200,             // Use 115200 br
-	parameter N = 4,                        // Vector len
-	parameter D = 3
+	parameter WIDTH = 4,                       // Vector width
+	parameter DELAY = 3
 )(
     input logic CLK100MHZ, CPU_RESETN,
     input logic UART_TXD_IN,
@@ -29,7 +29,7 @@ module device import master_state_enum::*; #(
     
 /********************************* MEMORY MAGNEMENT ************************************/
 //  ADDR ITERATION    
-    localparam DIRW = $clog2(N);
+    localparam DIRW = $clog2(WIDTH);
     logic [DIRW-1:0] addr;
     logic addr_inc;
     counter_with_inc #(DIRW) master_count(
@@ -37,34 +37,43 @@ module device import master_state_enum::*; #(
         .inc(addr_inc),.count(addr)
     );
     
-//  MEMORY IN
-    logic [N-1:0] write, writeA, writeB; // one hot counter
-    logic [N-1:0] [7:0] paralell;
+//  DATA IN
+    logic [WIDTH-1:0] write, writeA, writeB; // one hot counter
+    logic [WIDTH-1:0] [7:0] parallel_in;
     
-    logic [N-1:0] [7:0] vectA, vectB;
+    logic [WIDTH-1:0] [7:0] vectA, vectB;
     logic en_wri_A, en_read_A, en_wri_B, en_read_B;
     
-    byte_to_mem  #(N) paralellizer(
+    byte_to_mem  #(WIDTH) parallelizer(
         .clk(CLK100MHZ),.rst(~CPU_RESETN),
         .addr_inc(addr_inc),.data(rx_data),.addr(addr),
-        .save(write),.paralell(paralell)
+        .save(write),.parallel(parallel_in)
     );
     
-    DRAM #(N) mem_in_A(
+    DRAM #(WIDTH) mem_in_A(
         .clk(CLK100MHZ),.rst(~CPU_RESETN),
-        .save_mem(writeA),.data_in(paralell),.data_out(vectA)
+        .save_mem(writeA),.data_in(parallel_in),.data_out(vectA)
     );
     
-    DRAM #(N) mem_in_B(
+    DRAM #(WIDTH) mem_in_B(
         .clk(CLK100MHZ),.rst(~CPU_RESETN),
-        .save_mem(writeB),.data_in(paralell),.data_out(vectB)
+        .save_mem(writeB),.data_in(parallel_in),.data_out(vectB)
     );
     
-//  MEMORY OUT   
-//    DRAM #(N) mem_out(
-//        .clk(CLK100MHZ),.rst(~CPU_RESETN),
-//        .save_mem(save_mem),.data_in(rx_data),.data_out(vectA)
-//    );
+//  DATA OUT
+    logic [WIDTH-1:0][7:0] Res, parallel_out;
+    
+    DRAM #(WIDTH) mem_out_res(
+        .clk(CLK100MHZ),.rst(~CPU_RESETN),
+        .save_mem(),.data_in(),.data_out()
+    );
+    
+    //    logic [7:0] vectA_byte, vectB_byte;
+
+    mem_to_byte #(WIDTH) serializer(
+        .addr(addr),.parallel(parallel_out),
+        .data(tx_data)    
+    );
     
 /***************************************************************************************/
 
@@ -95,7 +104,7 @@ module device import master_state_enum::*; #(
 //        .tx_data(avg_data)
 //    );
 
-//    ManDisOperation #(N,d) Man_Dist_inst(
+//    ManDisOperation #(WIDTH,d) Man_Dist_inst(
 //        .clk(CLK100MHZ),.rst(~CPU_RESETN),.en(state == ManDis),
 //        .tx_busy(tx_busy),.tx_data(man_data),.tx_start(man_tx),
 //        .addr(addr),.A(vectA),.B(vectB),
@@ -103,7 +112,7 @@ module device import master_state_enum::*; #(
 //        .result(man_result)
 //    );
     
-//    EucDisOperation #(N,d) Euc_Dist_inst(
+//    EucDisOperation #(WIDTH,d) Euc_Dist_inst(
 //        .clk(CLK100MHZ),.rst(~CPU_RESETN),.en(state == EucDis),
 //        .tx_busy(tx_busy),.tx_data(euc_data),.tx_start(euc_tx),
 //        .addr(addr),.A(vectA),.B(vectB),
@@ -115,7 +124,7 @@ module device import master_state_enum::*; #(
 /************************************ PRIMARY FSM **************************************/    
     logic job_ok;
     
-    main_fsm #(N) main(.*);
+    main_fsm #(WIDTH) main(.*);
 
 /***************************************************************************************/
 endmodule

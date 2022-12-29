@@ -72,7 +72,12 @@ module TB_device();
         #10 rx = 0; #10 rx = 1; #10 rx = 1; #10 rx = 1;
         #10 rx = 1; #10 rx = 1; #10 rx = 0; #10 rx = 0;
         #10 rx = 1;
+        
+    // READ VECTOR A
+        #20 rx = 0;
+        #10 rx = 1; #10 rx = 1; #10 rx = 0; #10 rx = 0;
+        #10 rx = 0; #10 rx = 0; #10 rx = 0; #10 rx = 0;
+        #10 rx = 1;
+
     end
-
-
 endmodule

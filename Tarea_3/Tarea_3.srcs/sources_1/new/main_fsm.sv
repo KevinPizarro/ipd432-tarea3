@@ -1,22 +1,27 @@
 module main_fsm import master_state_enum::*; #(
-    parameter N = 4)
+    parameter WIDTH = 4)
     (
-    input logic CLK100MHZ, CPU_RESETN,
+    input  logic CLK100MHZ, CPU_RESETN,
     output logic job_ok,  
     
-    input logic rx_ready, tx_busy,      // UART
-    input logic [7:0] rx_data,          // UART
+    input  logic rx_ready, tx_busy,     // UART
+    input  logic [7:0] rx_data,         // UART
     output logic tx_start,              // UART
-    output logic [7:0] tx_data,         // UART
+//    output logic [7:0] tx_data,         // UART
 
-    input logic [$clog2(N)-1:0] addr,   // Counter
+    input  logic [$clog2(WIDTH)-1:0] addr,  // Counter
     output logic addr_inc,                  // Counter
 
-    input logic [N-1:0] write,              // Memory
-    output logic [N-1:0] writeA, writeB    // Memory
+    input  logic [WIDTH-1:0] write,             // Memory
+    output logic [WIDTH-1:0] writeA, writeB,    // Memory
+//    input  logic [7:0] vectA_byte, vectB_byte   // Memory
+
+    input  logic [WIDTH-1:0] [7:0] vectA, vectB, Res,   // Data out
+    output logic [WIDTH-1:0] [7:0] parallel_out         // Data out
     );
     
     enum_state state, nx_state;
+    logic nx_start;
     
 // SYNC TRANS
     always_ff @(posedge CLK100MHZ)
@@ -41,64 +46,65 @@ module main_fsm import master_state_enum::*; #(
         nx_state = Standby;
     else
         nx_state = state;
-        
+     
 // COMB OUT
     always_comb begin
         job_ok = 0;
-        tx_start = 0;
-        tx_data = 0;
+        nx_start = 0;
+//        tx_data = 0;
+        parallel_out = 0;
         addr_inc = 0;
         writeA = 0;
         writeB = 0;
         case (state)
-            Standby:    addr_inc = rx_ready;
+        /*  Standby: -equal to default case- */
             WriteVecA:  begin
                             writeA = write;
                             addr_inc = rx_ready;
-                            job_ok = (addr == N-1 && addr_inc) ? 1 : 0 ;
+                            job_ok = (addr == WIDTH-1 && addr_inc) ? 1 : 0 ;
                         end
             WriteVecB:  begin
                             writeB = write;
                             addr_inc = rx_ready;
-                            job_ok = (addr == N-1 && addr_inc) ? 1 : 0 ;
+                            job_ok = (addr == WIDTH-1 && addr_inc) ? 1 : 0 ;
                         end     
             ReadVecA:   begin
-//                            tx_start = ~tx_busy;
-//                            tx_data = vectA;
-//                            addr_inc = tx_start;
-//                            job_ok = (addr == N-1 && addr_inc) ? 1 : 0 ;
-                            job_ok = 1;
+                            nx_start = ~tx_busy;
+//                            tx_data = vectA_byte;
+                            parallel_out = vectA;
+                            addr_inc = nx_start;
+                            job_ok = (addr == WIDTH-1 && addr_inc) ? 1 : 0 ;
                         end   
             ReadVecB:   begin
-//                            tx_start = ~tx_busy;
-//                            tx_data = vectB;
-//                            addr_inc = tx_start;                            
-//                            job_ok = (addr == N-1 && addr_inc) ? 1 : 0 ;
-                            job_ok = 1;
+                            nx_start = ~tx_busy;
+//                            tx_data = vectB_byte;
+                            parallel_out = vectB;
+                            addr_inc = nx_start;                            
+                            job_ok = (addr == WIDTH-1 && addr_inc) ? 1 : 0 ;
                         end   
             SumVec:     begin
-//                            tx_start = ~tx_busy;
+//                            nx_start = ~tx_busy;
 //                            tx_data = sum_data;
-//                            addr_inc = tx_start;
-//                            job_ok = (addr == N-1 && addr_inc) ? 1 : 0 ;
+//                            addr_inc = nx_start;
+//                            job_ok = (addr == WIDTH-1 && addr_inc) ? 1 : 0 ;
                             job_ok = 1;
                         end 
             AvgVec:     begin
-//                            tx_start = ~tx_busy;
+//                            nx_start = ~tx_busy;
 //                            tx_data = avg_data;
-//                            addr_inc = tx_start;
-//                            job_ok = (addr == N-1 && addr_inc) ? 1 : 0 ;
+//                            addr_inc = nx_start;
+//                            job_ok = (addr == WIDTH-1 && addr_inc) ? 1 : 0 ;
                             job_ok = 1;
                         end 
             ManDis:     begin
-//                            tx_start = man_tx;
+//                            nx_start = man_tx;
 //                            tx_data = man_data;
 //                            addr_inc = man_inc;
 //                            job_ok = man_ok;
                             job_ok = 1;
                         end 
             EucDis:     begin
-//                            tx_start = euc_tx;
+//                            nx_start = euc_tx;
 //                            tx_data = euc_data;
 //                            addr_inc = euc_inc;
 //                            job_ok = euc_ok;
@@ -106,4 +112,8 @@ module main_fsm import master_state_enum::*; #(
                         end 
         endcase  
     end
+    
+    always_ff @(posedge CLK100MHZ)
+        if(~CPU_RESETN) tx_start <= 0;
+        else            tx_start <= nx_start;
 endmodule
