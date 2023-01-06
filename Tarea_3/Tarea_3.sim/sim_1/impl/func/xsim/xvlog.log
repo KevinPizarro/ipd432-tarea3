@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.sim/sim_1/impl/func/xsim/TB_device_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-311] analyzing module DRAM_0
+INFO: [VRFC 10-311] analyzing module ManDisOperation
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-311] analyzing module adder_tree__parameterized0
+INFO: [VRFC 10-311] analyzing module byte_to_mem
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module counter_with_inc
+INFO: [VRFC 10-311] analyzing module counter_with_inc__parameterized0
+INFO: [VRFC 10-311] analyzing module data_sync
+INFO: [VRFC 10-311] analyzing module device
+INFO: [VRFC 10-311] analyzing module info_to_7seg
+INFO: [VRFC 10-311] analyzing module multiplexing
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-311] analyzing module uart_basic
+INFO: [VRFC 10-311] analyzing module uart_baud_tick_gen
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module glbl

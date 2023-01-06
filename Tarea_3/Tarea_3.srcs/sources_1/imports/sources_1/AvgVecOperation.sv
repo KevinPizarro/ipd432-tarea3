@@ -1,7 +1,14 @@
-module AvgVecOperation(
-    input logic [7:0] A, B,
-    output logic [7:0] tx_data
-    );
-    logic [8:0] sum = A + B;    // one bit more
-    assign tx_data = sum[8:1];
+module AvgVecOperation #(
+    parameter WIDTH = 4,
+    parameter DEEPTH = 8
+)(
+    input logic [WIDTH-1:0][DEEPTH:0] comp_adder,
+    output logic [WIDTH-1:0][DEEPTH-1:0] avg
+);
+    
+    always_comb begin
+        for(int i = 0;i < WIDTH; i++) begin
+            avg[i] = comp_adder[i][DEEPTH:1];
+        end
+    end
 endmodule

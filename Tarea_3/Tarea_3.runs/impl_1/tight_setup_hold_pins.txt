@@ -1,0 +1,14 @@
++====================+===================+=============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                         |
++====================+===================+=============================================+
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[7]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[6]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[0]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[2]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[5]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[1]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[3]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | uart_logic/uart_tx_blk/tx_data_reg_reg[4]/D |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | mem_tx_control/FSM_onehot_state_reg[1]/D    |
+| CLKLOG_clk_wiz_0   | CLKLOG_clk_wiz_0  | mem_tx_control/FSM_onehot_state_reg[2]/D    |
++--------------------+-------------------+---------------------------------------------+
