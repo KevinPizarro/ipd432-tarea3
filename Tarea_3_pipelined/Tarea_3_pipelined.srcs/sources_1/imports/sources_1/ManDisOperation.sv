@@ -1,5 +1,5 @@
 module ManDisOperation #(
-    parameter WIDTH = 64,
+    parameter WIDTH = 4,
     parameter DEEPTH = 8
 )(
     input  logic clk,
@@ -19,9 +19,9 @@ module ManDisOperation #(
         .clk(clk),.addend(abs),.total(sumatory)
     );
     
-    always_ff @(posedge clk) begin
-        result  <= sumatory;
-        vectOut <= sumatory;
+    always_comb begin
+        result  = sumatory;
+        vectOut = sumatory;
     end
       
 endmodule

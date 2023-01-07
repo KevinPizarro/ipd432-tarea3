@@ -3,11 +3,10 @@
 module TB_one_hot();
     logic clk, rst, inc;
     
-    localparam WIDTH = 4;
-    logic [WIDTH-1:0] data;
+    logic [7:0] data, no_data;
     
-    one_hot_counter #(WIDTH) cnt(clk,rst,inc,data);
-     
+    test a(.data(data),.data_rev(no_data));
+    
     always #5 clk = ~clk;
     
     initial begin
@@ -15,10 +14,6 @@ module TB_one_hot();
         clk = 1;
         inc = 0;
         # 10 
-        rst = 0;
-        inc = 1; #10 inc = 0;
-        #30 inc = 1; #10 inc = 0;
-        #20 inc = 1; #20 inc = 0;
-        rst = 1;
+        data  = 8'b11011001;
     end
 endmodule

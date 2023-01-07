@@ -1,4 +1,3 @@
-
 module adder_tree #(
     parameter WIDTH = 8,
     parameter DEEPTH = 8,
@@ -18,7 +17,7 @@ module adder_tree #(
             for(i = 0; i < WIDTH/2 ; i = i + 1)
                 assign nx_acum[i] = addend[2*i]+addend[2*i+1];
             adder_tree #(WIDTH/2,DEEPTH+1) ins(
-                .addend(acum),.total(total)
+                .clk(clk),.addend(acum),.total(total)
             ); 
         end
     endgenerate 

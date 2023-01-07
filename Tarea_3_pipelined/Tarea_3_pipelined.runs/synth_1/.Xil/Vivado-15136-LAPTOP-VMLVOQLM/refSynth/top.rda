@@ -1,148 +1,0 @@
-Data_For_RDAFlowver5.0
-	top levelì`
-device
-LinkDesign_BlackboxesÂ6
-synthFileNamesJ
-10DC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhdG
-11AC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/BRAM_TDP_MACRO.vhdK
-12EC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/COUNTER_LOAD_MACRO.vhdI
-13CC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/COUNTER_TC_MACRO.vhdI
-14CC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/EQ_COMPARE_MACRO.vhdF
-20@C:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/ADDSUB_MACRO.vM
-15GC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhdH
-21BC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/BRAM_SDP_MACRO.vH
-16BC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhdK
-22EC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.vC
-17=C:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/MACC_MACRO.vhdC
-18=C:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/MULT_MACRO.vhdH
-23BC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/BRAM_TDP_MACRO.vG
-19AC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/ADDMACC_MACRO.vL
-24FC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/COUNTER_LOAD_MACRO.vJ
-25DC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/COUNTER_TC_MACRO.vD
-30>C:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/MULT_MACRO.v
-NumFileNames66J
-26DC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/EQ_COMPARE_MACRO.vJ
-31DC:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/retarget/MULT18X18.vhd=
-18C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_VCOMP.vhdN
-27HC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.vK
-32EC:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/retarget/MULT18X18S.vhd<
-27C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_VPKG.vhdI
-28CC:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/FIFO_SYNC_MACRO.vñ
-33èD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/AvgVecOperation.sv:
-35C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.vD
-29>C:/Xilinx/Vivado/2022.1/data/verilog/src/unimacro/MACC_MACRO.vä
-34ÉD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/BCD.sv=
-48C:/Xilinx/Vivado/2022.1/scripts/rt/data/internal_cells.v|
-35vD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/DRAM.svÉ
-40}D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/byte_to_mem.sv3
-5.C:/Xilinx/Vivado/2022.1/scripts/rt/data/BUFT.vñ
-36èD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/ManDisOperation.svó
-41êD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/counter_with_inc.svF
-6AC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/unimacro_VCOMP.vhdì
-37åD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/Multiplexing.svÉ
-42}D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/data_enable.svE
-7@C:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/ADDMACC_MACRO.vhdñ
-38èD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/SumVecOperation.svò
-43ëD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/master_state_enum.svD
-8?C:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/ADDSUB_MACRO.vhdÇ
-39|D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/adder_tree.svì
-44åD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/info_to_7seg.svè
-50àD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/data_sync.vF
-9AC:/Xilinx/Vivado/2022.1/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhdÉ
-45}D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/mem_to_byte.svì
-51åD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/double_dabble.vâ
-46ÇD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/n_bit_multiadder.svê
-52âD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/uart_basic.vä
-47ÉD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/new/save_and_transmit.svò
-53ëD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/uart_baud_tick_gen.vå
-48ÖD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/timer.svç
-54ÜD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/uart_rx.vç
-49ÜD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/device.svÑ
-60~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/timing_p.vhdç
-55ÜD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/uart_tx.vÑ
-61~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/timing_b.vhdÑ
-56~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/std_1164.vhdÑ
-62~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/prmtvs_p.vhdÑ
-57~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/standard.vhdÑ
-63~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/prmtvs_b.vhdà
-58ÅD:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/numeric_std.vhdÑ
-64~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/syn_arit.vhdÇ
-59|D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/textio.vhdÑ
-65~D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.runs/synth_1/1993/src/syn_unsi.vhd‹
-
-synthStatsC
-caseNotFullNoDefault
-L78
-Mnullname
-F54
-
-OstateC
-caseNotFullNoDefault
-L21
-Mnullname
-F47
-
-OstateD
-caseNotFullNoDefault
-L191
-Mnullname
-F49
-
-Ostateé#
-ElaboratedNamesForRQSÙ"
-DSP_RAMŒ
-65548ƒ {screen/conv/bcd0_i__10} {screen/conv/bcd0_i__100} {screen/conv/bcd0_i__106} {screen/conv/bcd0_i__16} {screen/conv/bcd0_i__22} {screen/conv/bcd0_i__28} {screen/conv/bcd0_i__34} {screen/conv/bcd0_i__4} {screen/conv/bcd0_i__40} {screen/conv/bcd0_i__46} {screen/conv/bcd0_i__52} {screen/conv/bcd0_i__58} {screen/conv/bcd0_i__64} {screen/conv/bcd0_i__70} {screen/conv/bcd0_i__76} {screen/conv/bcd0_i__82} {screen/conv/bcd0_i__88} {screen/conv/bcd0_i__94}  
-196619 {screen/state1_i__0} 4
-233477* {uart_logic/uart_tx_blk/counter_next0_i} ‡
-65556÷ {Man_Dist_inst/RTL_SUB} {Man_Dist_inst/RTL_SUB__0} {Man_Dist_inst/RTL_SUB__1} {Man_Dist_inst/RTL_SUB__2} {Man_Dist_inst/RTL_SUB__3} {Man_Dist_inst/RTL_SUB__4} {Man_Dist_inst/RTL_SUB__5} {Man_Dist_inst/RTL_SUB__6} 0
-65557' {Man_Dist_inst/adder/ins/total[0]0_i} 8
-348163. {uart_logic/uart_rx_blk/bit_counter_next0_i} /
-319491% {uart_logic/uart_rx_blk/rx_ready_i} 
-684032 {nx_state_i} Ã
-53260¬ {screen/conv/bcd0_i__1} {screen/conv/bcd0_i__103} {screen/conv/bcd0_i__13} {screen/conv/bcd0_i__19} {screen/conv/bcd0_i__25} {screen/conv/bcd0_i__31} {screen/conv/bcd0_i__37} {screen/conv/bcd0_i__43} {screen/conv/bcd0_i__49} {screen/conv/bcd0_i__55} {screen/conv/bcd0_i__61} {screen/conv/bcd0_i__67} {screen/conv/bcd0_i__7} {screen/conv/bcd0_i__73} {screen/conv/bcd0_i__79} {screen/conv/bcd0_i__85} {screen/conv/bcd0_i__91} {screen/conv/bcd0_i__97} F
-126980< {uart_logic/uart_rx_blk/rx_sync_inst/sync_counter_next0_i} '
-53263 {screen/Mul/clk_seg/pulse_i} j
-53265a {adder/sum_adder[0]0_i} {adder/sum_adder[1]0_i} {adder/sum_adder[2]0_i} {adder/sum_adder[3]0_i} 
-782336 {enable_data_i} @
-409667 {master_count/count0_i} {screen/Mul/counter/count0_i} X
-172034N {uart_logic/baud8_tick_blk/acc_reg0_i} {uart_logic/baud_tick_blk/acc_reg0_i} Ã
-57356¬ {screen/conv/bcd0_i__104} {screen/conv/bcd0_i__14} {screen/conv/bcd0_i__2} {screen/conv/bcd0_i__20} {screen/conv/bcd0_i__26} {screen/conv/bcd0_i__32} {screen/conv/bcd0_i__38} {screen/conv/bcd0_i__44} {screen/conv/bcd0_i__50} {screen/conv/bcd0_i__56} {screen/conv/bcd0_i__62} {screen/conv/bcd0_i__68} {screen/conv/bcd0_i__74} {screen/conv/bcd0_i__8} {screen/conv/bcd0_i__80} {screen/conv/bcd0_i__86} {screen/conv/bcd0_i__92} {screen/conv/bcd0_i__98}  
-200715 {screen/state1_i__1} 5
-229381+ {uart_logic/uart_tx_blk/state_next0_i__1} (
-45071 {screen/Mul/clk_seg/count0_i} …
-45068ø {screen/conv/bcd0_i} {screen/conv/bcd0_i__101} {screen/conv/bcd0_i__11} {screen/conv/bcd0_i__17} {screen/conv/bcd0_i__23} {screen/conv/bcd0_i__29} {screen/conv/bcd0_i__35} {screen/conv/bcd0_i__41} {screen/conv/bcd0_i__47} {screen/conv/bcd0_i__5} {screen/conv/bcd0_i__53} {screen/conv/bcd0_i__59} {screen/conv/bcd0_i__65} {screen/conv/bcd0_i__71} {screen/conv/bcd0_i__77} {screen/conv/bcd0_i__83} {screen/conv/bcd0_i__89} {screen/conv/bcd0_i__95}  
-204811 {screen/state1_i__2} °
-45069ó {screen/bcd0/sevenSeg_i} {screen/bcd1/sevenSeg_i} {screen/bcd2/sevenSeg_i} {screen/bcd3/sevenSeg_i} {screen/bcd4/sevenSeg_i} {screen/bcd5/sevenSeg_i} Ã
-61452¬ {screen/conv/bcd0_i__105} {screen/conv/bcd0_i__15} {screen/conv/bcd0_i__21} {screen/conv/bcd0_i__27} {screen/conv/bcd0_i__3} {screen/conv/bcd0_i__33} {screen/conv/bcd0_i__39} {screen/conv/bcd0_i__45} {screen/conv/bcd0_i__51} {screen/conv/bcd0_i__57} {screen/conv/bcd0_i__63} {screen/conv/bcd0_i__69} {screen/conv/bcd0_i__75} {screen/conv/bcd0_i__81} {screen/conv/bcd0_i__87} {screen/conv/bcd0_i__9} {screen/conv/bcd0_i__93} {screen/conv/bcd0_i__99} 
-192523 {screen/state1_i} P
-77845G {Man_Dist_inst/adder/nx_acum[0]_i} {Man_Dist_inst/adder/nx_acum[1]_i} Ã
-49164¬ {screen/conv/bcd0_i__0} {screen/conv/bcd0_i__102} {screen/conv/bcd0_i__12} {screen/conv/bcd0_i__18} {screen/conv/bcd0_i__24} {screen/conv/bcd0_i__30} {screen/conv/bcd0_i__36} {screen/conv/bcd0_i__42} {screen/conv/bcd0_i__48} {screen/conv/bcd0_i__54} {screen/conv/bcd0_i__6} {screen/conv/bcd0_i__60} {screen/conv/bcd0_i__66} {screen/conv/bcd0_i__72} {screen/conv/bcd0_i__78} {screen/conv/bcd0_i__84} {screen/conv/bcd0_i__90} {screen/conv/bcd0_i__96} <
-3031072 {uart_logic/uart_rx_blk/spacing_counter_next0_i} I
-135172? {uart_logic/uart_rx_blk/rx_sync_inst/sync_counter_next0_i__0}  
-208907 {screen/state1_i__3} 
-135182 {screen/Mul/AN_i} Y
-135179O {screen/distance_i__1} {screen/en_i__1} {screen/mode_i__1} {screen/mode_i__4} )
-110603 {screen/en_i} {screen/mode_i} 
-blackBoxInfoá
-synth_design
-isIncremental0
-Runtime0
-Threads used2V
-argsN-verilog_define default::[not_specified] -top  device -part  xc7a100tcsg324-1 
-resynthPerc0.00
-Cputime0
-blackBoxPerc	-nan(ind)
-	directive ú
-synth_design_metrics$
-mismatchedAddSubOperatorWidths-1
-lowMaxFanout-1
-NumUnregisteredPorts0
-caseNotFullNoDefault3
-	smallSrls-1
-srlsWithResetLogic-1
-shallowRAMWithAttribute-1
-hierMFO0
-bigRAMs-1
-NetsWithMixedFanouts-1
-DSPsWithKeep0
-RQS_Results

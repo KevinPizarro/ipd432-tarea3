@@ -1,7 +1,7 @@
 module info_to_7seg import master_state_enum::*;(
     input logic clk, rst,
     input enum_state state,
-    input [19:0] euc, man,
+    input [19:0] man,
     output logic [7:0] SEG, AN
     );
     
@@ -23,13 +23,7 @@ module info_to_7seg import master_state_enum::*;(
             en <= 1;
             mode <= 16'h37_76;    // MH
             distance <= man;
-        end
-        else if(state == EucDis) begin                
-            en <= 1;
-            mode <= 16'h79_39;    // EC
-            distance <= euc;
-        end   
- 
+        end 
         else if(state == Standby) begin                
             en <= en;
             mode <= mode;
