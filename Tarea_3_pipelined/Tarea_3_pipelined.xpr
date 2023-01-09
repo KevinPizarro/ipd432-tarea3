@@ -63,13 +63,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="5"/>
-    <Option Name="WTModelSimExportSim" Val="5"/>
-    <Option Name="WTQuestaExportSim" Val="5"/>
+    <Option Name="WTXSimExportSim" Val="6"/>
+    <Option Name="WTModelSimExportSim" Val="6"/>
+    <Option Name="WTQuestaExportSim" Val="6"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="5"/>
-    <Option Name="WTRivieraExportSim" Val="5"/>
-    <Option Name="WTActivehdlExportSim" Val="5"/>
+    <Option Name="WTVcsExportSim" Val="6"/>
+    <Option Name="WTRivieraExportSim" Val="6"/>
+    <Option Name="WTActivehdlExportSim" Val="6"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -87,64 +87,50 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/data_sync.v">
+      <File Path="$PSRCDIR/sources_1/new/data_sync.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/data_sync.v"/>
-          <Attr Name="ImportTime" Val="1665972349"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/double_dabble.v">
+      <File Path="$PSRCDIR/sources_1/new/double_dabble.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/double_dabble.v"/>
-          <Attr Name="ImportTime" Val="1669363718"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/uart_basic.v">
+      <File Path="$PSRCDIR/sources_1/new/uart_basic.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/uart_basic.v"/>
-          <Attr Name="ImportTime" Val="1665972349"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/uart_baud_tick_gen.v">
+      <File Path="$PSRCDIR/sources_1/new/uart_baud_tick_gen.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/uart_baud_tick_gen.v"/>
-          <Attr Name="ImportTime" Val="1665972349"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/uart_rx.v">
+      <File Path="$PSRCDIR/sources_1/new/uart_rx.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/uart_rx.v"/>
-          <Attr Name="ImportTime" Val="1665972349"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/uart_tx.v">
+      <File Path="$PSRCDIR/sources_1/new/uart_tx.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/uart_tx.v"/>
-          <Attr Name="ImportTime" Val="1665972349"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/BCD.sv">
+      <File Path="$PSRCDIR/sources_1/new/BCD.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/BCD.sv"/>
-          <Attr Name="ImportTime" Val="1666929584"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -159,19 +145,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/ManDisOperation.sv">
+      <File Path="$PSRCDIR/sources_1/new/ManDisOperation.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/ManDisOperation.sv"/>
-          <Attr Name="ImportTime" Val="1670393043"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/Multiplexing.sv">
+      <File Path="$PSRCDIR/sources_1/new/Multiplexing.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/Multiplexing.sv"/>
-          <Attr Name="ImportTime" Val="1667306755"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -195,10 +177,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/counter_with_inc.sv">
+      <File Path="$PSRCDIR/sources_1/new/counter_with_inc.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/counter_with_inc.sv"/>
-          <Attr Name="ImportTime" Val="1666929584"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -211,19 +191,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/master_state_enum.sv">
+      <File Path="$PSRCDIR/sources_1/new/master_state_enum.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/master_state_enum.sv"/>
-          <Attr Name="ImportTime" Val="1669002076"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/info_to_7seg.sv">
+      <File Path="$PSRCDIR/sources_1/new/info_to_7seg.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/info_to_7seg.sv"/>
-          <Attr Name="ImportTime" Val="1669517891"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -263,89 +239,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/timer.sv">
+      <File Path="$PSRCDIR/sources_1/new/timer.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/timer.sv"/>
-          <Attr Name="ImportTime" Val="1668916399"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/device.sv">
+      <File Path="$PSRCDIR/sources_1/new/device.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/device.sv"/>
-          <Attr Name="ImportTime" Val="1669517863"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/SumVecOperation.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/SumVecOperation.sv"/>
-          <Attr Name="ImportTime" Val="1669360061"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/AvgVecOperation.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/AvgVecOperation.sv"/>
-          <Attr Name="ImportTime" Val="1669360060"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/test.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.srcs/sources_1/new/test.sv"/>
-          <Attr Name="ImportTime" Val="1672271521"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/main_fsm.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.srcs/sources_1/new/main_fsm.sv"/>
-          <Attr Name="ImportTime" Val="1672296919"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/one_hot_counter.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.srcs/sources_1/new/one_hot_counter.sv"/>
-          <Attr Name="ImportTime" Val="1672147924"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/memory_bank.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/memory_bank.sv"/>
-          <Attr Name="ImportTime" Val="1665237000"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/EucDisOperation.sv">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.scrs/sources_1/EucDisOperation.sv"/>
-          <Attr Name="ImportTime" Val="1670393060"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -384,7 +286,6 @@
       <File Path="$PSRCDIR/sim_1/new/TB_one_hot.sv">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Tarea_3/Tarea_3.srcs/sim_1/new/TB_one_hot.sv"/>
           <Attr Name="ImportTime" Val="1672148458"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -440,6 +341,14 @@
           <Attr Name="AutoDcp" Val="1"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/utils_1/imports/synth_1ILA/device.dcp">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedInSteps" Val="synth_1ILA"/>
+          <Attr Name="AutoDcp" Val="1"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
@@ -464,7 +373,27 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="19">
-    <Run Id="synth_1_copy_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/device.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1_copy_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1/synth_1_copy_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1_copy_1">
+    <Run Id="synth_1_copy_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/device.dcp" WriteIncrSynthDcp="false" Dir="$PRUNDIR/synth_1_copy_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1/synth_1_copy_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1_copy_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="synth_1ILA" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1ILA/device.dcp" WriteIncrSynthDcp="false" Dir="$PRUNDIR/synth_1ILA" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1ILA" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1ILA">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="synth_final" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_final" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_final" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_final">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -476,7 +405,45 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Uses multiple optimization algorithms to get potentially fewer LUTs." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_1_copy_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_2" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_2">
+    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Uses multiple optimization algorithms to get potentially fewer LUTs." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/impl_2" SynthRun="synth_1_copy_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_2" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_2">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Area_Explore" Flow="Vivado Implementation 2022"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Directive">1</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="0"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_ILA" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/impl_ILA" SynthRun="synth_1ILA" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_ILA" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_ILA">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_final" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Uses multiple optimization algorithms to get potentially fewer LUTs." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_final" SynthRun="synth_final" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_final" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_final">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Area_Explore" Flow="Vivado Implementation 2022">
           <Desc>Uses multiple optimization algorithms to get potentially fewer LUTs.</Desc>

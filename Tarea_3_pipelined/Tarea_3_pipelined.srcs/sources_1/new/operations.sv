@@ -25,15 +25,7 @@ module operation #(
         .sum_adder(vectSum),.avg_adder(vectAvg),
         .A(A),.B(B),.clk(clk)
     );
-        
-//    SumVecOperation #(WIDTH, DEEPTH) Sum_Vect_inst(
-//        .clk(clk),.sum_adder(sum_adder),.sum(vectSum)
-//    );
-    
-//    SumVecOperation #(WIDTH, DEEPTH) Avg_Vect_inst(
-//        .clk(clk),.sum_adder(avg_adder),.sum(vectAvg)
-//    );
-    
+            
     ManDisOperation #(WIDTH, DEEPTH) Man_Dist_inst(
         .clk(clk),.A(A),.B(B),
         .vectOut(vectMan),.result(numMan)
