@@ -1,6 +1,0 @@
-0.7
-2020.2
-Apr 18 2022
-16:05:34
-D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.sim/sim_1/synth/func/xsim/TB_device_func_synth.v,1672920978,verilog,,,,DRAM;DRAM_0;ManDisOperation;adder_tree;adder_tree__parameterized0;byte_to_mem;clk_wiz_0;clk_wiz_0_clk_wiz;counter_with_inc;counter_with_inc__parameterized0;data_sync;device;glbl;info_to_7seg;multiplexing;timer;uart_basic;uart_baud_tick_gen;uart_baud_tick_gen__parameterized0;uart_rx,,uvm,../../../../../Tarea_3.gen/sources_1/ip/clk_wiz_0,,,,,
-D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3/Tarea_3.srcs/sim_1/new/TB_device.sv,1672866333,systemVerilog,,,,TB_device,,uvm,../../../../../Tarea_3.gen/sources_1/ip/clk_wiz_0,,,,,
