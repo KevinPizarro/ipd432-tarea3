@@ -1,92 +1,50 @@
-# Tarea3
+# Tarea 3
 
+## Sobre el repositorio
 
+Este repositorio fue desarrollado para la tarea 3 de la asignatura IPD432 de la Universidad Técnica Federico Santa María. El objetivo es explorar y explotar el paralelismo de los sistemas digitales a través de un coprocesador de operaciones vectoriales. Particularmente, se trabaja con la tarjeta de desarrollo [Nexys A7](https://digilent.com/reference/programmable-logic/nexys-a7/start) basada en la FPGA Artix-7 de Xilinx.
 
-## Getting started
+## Estructura del repositorio
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+La estructura que sigue el repositorio cuenta con un espacio de trabajo, los diagramas utilizados en el reporte, una carpeta con los archivos entregables y finalmente el archivo README.
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/ipd432/tarea3.git
-git branch -M main
-git push -uf origin main
+    - Workspace
+        - Tarea_3_fullcomb
+            Proyecto de Vivado
+            ...
+        - Tarea_3_pipelined
+            Proyecto de Vivado
+            ...
+    - Entregables
+        - Comb
+            Source files
+            Constraints
+        - Pipelined
+            Source files
+            Constraints
+    - MATLAB
+    - Diagramas
+    * README.md
 ```
 
-## Integrate with your tools
+Principalmente el directorio **Workspace** posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio **Entregables** posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. Finalmente la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
 
-- [ ] [Set up project integrations](https://gitlab.com/ipd432/tarea3/-/settings/integrations)
+## Replicación
 
-## Collaborate with your team
+Para obtener los resultados del reporte escrito se hace uso de los proyectos del **Workspace** a través de Vivado, versión [v2022.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html) (64-bit) en un dispositivo con Windows 10. Además, para el dispositivo host se debe utilizar MATLAB, versión [XXXX.X](https://matlab.mathworks.com/).
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Para replicar basta con seguir los siguientes pasos:
 
-## Test and Deploy
+1. Abrir el proyecto de interés (Tarea_3_fullcomb o Tarea_3_pipelined) en Vivado.
+2. Conectar la tarjeta de desarrollo Nexys-7 al computador (dispositivo host).
+3. Abrir el archivo XXXX en MATLAB y ejecutarlo.
+4. En Vivado, presionar la opción Generate Bitstream.
+5. Cargar en la tarjeta de desarrollo el archivo generado.
+6. Hacer uso de la interfaz en MATLAB para verificar el funcionamiento.
 
-Use the built-in continuous integration in GitLab.
+Adicionalmente, si se desea replicar los reportes y mediciones es necesario revisar los reportes de timing y utilización de recursos de síntesis e implementación.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+## Entregables
 
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Los archivos en la carpeta **Entregables** son meramente para extracción de los módulos del proyecto y que no pese demasiado. Esto fomentando la reutilización de los módulos sin tener que poseer el proyecto en su completitud.
