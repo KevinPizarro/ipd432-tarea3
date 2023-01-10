@@ -9,13 +9,7 @@ Este repositorio fue desarrollado para la tarea 3 de la asignatura IPD432 de la 
 La estructura que sigue el repositorio cuenta con un espacio de trabajo, los diagramas utilizados en el reporte, una carpeta con los archivos entregables y finalmente el archivo README.
 
 ```
-    - Workspace
-        - Tarea_3_fullcomb
-            Proyecto de Vivado
-            ...
-        - Tarea_3_pipelined
-            Proyecto de Vivado
-            ...
+    - Diagramas
     - Entregables
         - Comb
             Source files
@@ -24,21 +18,30 @@ La estructura que sigue el repositorio cuenta con un espacio de trabajo, los dia
             Source files
             Constraints
     - MATLAB
-    - Diagramas
-    * README.md
+        coprocessorTesting.m
+    - Workspace
+    - Tarea_3_fullcomb
+        Proyecto de Vivado
+        ...
+    - Tarea_3_pipelined
+        Proyecto de Vivado
+        ...
+    - lfsr_tutorial_src
+        Archivos relativos al adder-tree y LFSR.
+    - README.md
 ```
 
-Principalmente el directorio **Workspace** posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio **Entregables** posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. Finalmente la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
+Principalmente el directorio [**Workspace**](https://gitlab.com/ipd432/tarea3/-/tree/main/Workspace) posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio [**Entregables**](https://gitlab.com/ipd432/tarea3/-/tree/main/Entregables) posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. La carpeta [**MATLAB**](https://gitlab.com/ipd432/tarea3/-/tree/main/MATLAB) posee netamente el archivo que actua sobre el computador como host. Finalmente, la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
 
 ## Replicación
 
-Para obtener los resultados del reporte escrito se hace uso de los proyectos del **Workspace** a través de Vivado, versión [v2022.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html) (64-bit) en un dispositivo con Windows 10. Además, para el dispositivo host se debe utilizar MATLAB, versión [XXXX.X](https://matlab.mathworks.com/).
+Para obtener los resultados del reporte escrito se hace uso de los proyectos del **Workspace** a través de [Vivado v2022.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html) (64-bit) en un dispositivo con Windows 10. Además, para el dispositivo host se debe utilizar [MATLAB R2022b](https://matlab.mathworks.com/).
 
 Para replicar basta con seguir los siguientes pasos:
 
 1. Abrir el proyecto de interés (Tarea_3_fullcomb o Tarea_3_pipelined) en Vivado.
 2. Conectar la tarjeta de desarrollo Nexys-7 al computador (dispositivo host).
-3. Abrir el archivo XXXX en MATLAB y ejecutarlo.
+3. Abrir el archivo coprocessorTesting.m en MATLAB y ejecutarlo.
 4. En Vivado, presionar la opción Generate Bitstream.
 5. Cargar en la tarjeta de desarrollo el archivo generado.
 6. Hacer uso de la interfaz en MATLAB para verificar el funcionamiento.
