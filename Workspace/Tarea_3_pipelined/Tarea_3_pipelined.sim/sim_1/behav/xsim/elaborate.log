@@ -1,0 +1,39 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_device_behav xil_defaultlib.TB_device xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 20 differs from formal bit length 24 for port 'bin' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.srcs/sources_1/imports/sources_1/info_to_7seg.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.master_state_enum
+Compiling module xil_defaultlib.uart_baud_tick_gen(CLK_FREQUENCY...
+Compiling module xil_defaultlib.data_sync
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.uart_baud_tick_gen(CLK_FREQUENCY...
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.uart_basic(BAUD_RATE=10000000)
+Compiling module xil_defaultlib.counter_with_inc(n=2)
+Compiling module xil_defaultlib.byte_to_mem
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.mem_to_byte
+Compiling module xil_defaultlib.save_and_transmit_default
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.bcd2seg
+Compiling module xil_defaultlib.timer(n_clycles_count=104166)
+Compiling module xil_defaultlib.counter_with_inc(n=3)
+Compiling module xil_defaultlib.multiplexing(freq=120)
+Compiling module xil_defaultlib.info_to_7seg
+Compiling module xil_defaultlib.data_enable
+Compiling module xil_defaultlib.n_bit_multiadder
+Compiling module xil_defaultlib.adder_tree(WIDTH=2,DEEPTH=9)
+Compiling module xil_defaultlib.adder_tree(WIDTH=4,LENGTH=10)
+Compiling module xil_defaultlib.ManDisOperation_default
+Compiling module xil_defaultlib.operation
+Compiling module xil_defaultlib.device(BAUD_RATE=10000000)
+Compiling module xil_defaultlib.TB_device
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_device_behav

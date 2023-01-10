@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Tarea_3.gen/sources_1/ip/clk_wiz_0" \
+"TB_device_func_impl.v" \
+
+sv xil_defaultlib  --include "../../../../../Tarea_3.gen/sources_1/ip/clk_wiz_0" \
+"../../../../../Tarea_3.srcs/sim_1/new/TB_device.sv" \
+
+# Do not sort compile order
+nosort
