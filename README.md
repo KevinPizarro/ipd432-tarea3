@@ -23,14 +23,14 @@ La estructura que sigue el repositorio cuenta con un espacio de trabajo, los dia
         plot_ILA.py
         archivos de ILA formato csv
     - Workspace
-    - Tarea_3_fullcomb
-        Proyecto de Vivado
-        ...
-    - Tarea_3_pipelined
-        Proyecto de Vivado
-        ...
-    - lfsr_tutorial_src
-        Archivos relativos al adder-tree y LFSR.
+        - Tarea_3_fullcomb
+            Proyecto de Vivado
+            ...
+        - Tarea_3_pipelined
+            Proyecto de Vivado
+            ...
+        - lfsr_tutorial_src
+            Archivos relativos al adder-tree y LFSR.
     - README.md
 ```
 
