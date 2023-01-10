@@ -19,6 +19,9 @@ La estructura que sigue el repositorio cuenta con un espacio de trabajo, los dia
             Constraints
     - MATLAB
         coprocessorTesting.m
+    - Python
+        plot_ILA.py
+        archivos de ILA formato csv
     - Workspace
     - Tarea_3_fullcomb
         Proyecto de Vivado
@@ -31,7 +34,7 @@ La estructura que sigue el repositorio cuenta con un espacio de trabajo, los dia
     - README.md
 ```
 
-Principalmente el directorio [**Workspace**](https://gitlab.com/ipd432/tarea3/-/tree/main/Workspace) posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio [**Entregables**](https://gitlab.com/ipd432/tarea3/-/tree/main/Entregables) posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. La carpeta [**MATLAB**](https://gitlab.com/ipd432/tarea3/-/tree/main/MATLAB) posee netamente el archivo que actua sobre el computador como host. Finalmente, la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
+Principalmente el directorio [**Workspace**](https://gitlab.com/ipd432/tarea3/-/tree/main/Workspace) posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio [**Entregables**](https://gitlab.com/ipd432/tarea3/-/tree/main/Entregables) posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. La carpeta [**MATLAB**](https://gitlab.com/ipd432/tarea3/-/tree/main/MATLAB) posee netamente el archivo que actua sobre el computador como host. El directorio [**Python**](https://gitlab.com/ipd432/tarea3/-/tree/main/Python) posee principalmente el archivo fuente para poder graficar y exportar en formato svg los datos medidos con el ILA (archivos csv).Finalmente, la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
 
 ## Replicación
 
