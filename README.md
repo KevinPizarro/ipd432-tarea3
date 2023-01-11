@@ -34,7 +34,7 @@ La estructura que sigue el repositorio cuenta con un espacio de trabajo, los dia
     - README.md
 ```
 
-Principalmente el directorio [**Workspace**](https://gitlab.com/ipd432/tarea3/-/tree/main/Workspace) posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio [**Entregables**](https://gitlab.com/ipd432/tarea3/-/tree/main/Entregables) posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. La carpeta [**MATLAB**](https://gitlab.com/ipd432/tarea3/-/tree/main/MATLAB) posee netamente el archivo que actua sobre el computador como host. El directorio [**Python**](https://gitlab.com/ipd432/tarea3/-/tree/main/Python) posee principalmente el archivo fuente para poder graficar y exportar en formato svg los datos medidos con el ILA (archivos csv).Finalmente, la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
+Principalmente el directorio [**Workspace**](https://gitlab.com/ipd432/tarea3/-/tree/main/Workspace) posee los proyectos de Vivado en su completitud, dentro de él se encuentran los dos proyectos asociados a la tarea: una basada en lógica fully-combinational y otra basada en lógica fully-pipelined. Luego el directorio [**Entregables**](https://gitlab.com/ipd432/tarea3/-/tree/main/Entregables) posee las carpetas Comb y Pipelined, al igual que el espacio de trabajo corresponden a las lógicas combinacionales y pipelined respectivamente, en el directorio sólo se encuentran los archivos fuente y constraints utilizadas. La carpeta [**MATLAB**](https://gitlab.com/ipd432/tarea3/-/tree/main/MATLAB) posee el archivo que actúa sobre el computador como host y sus respectivos archivos de funciones. El directorio [**Python**](https://gitlab.com/ipd432/tarea3/-/tree/main/Python) posee principalmente el archivo fuente para poder graficar y exportar en formato svg los datos medidos con el ILA (archivos csv).Finalmente, la carpeta Diagramas es utilizada meramente para los diagramas utilizados en el reporte escrito.
 
 ## Replicación
 
@@ -49,8 +49,17 @@ Para replicar basta con seguir los siguientes pasos:
 5. Cargar en la tarjeta de desarrollo el archivo generado.
 6. Hacer uso de la interfaz en MATLAB para verificar el funcionamiento.
 
+
 Adicionalmente, si se desea replicar los reportes y mediciones es necesario revisar los reportes de timing y utilización de recursos de síntesis e implementación.
 
 ## Entregables
 
 Los archivos en la carpeta **Entregables** son meramente para extracción de los módulos del proyecto y que no pese demasiado. Esto fomentando la reutilización de los módulos sin tener que poseer el proyecto en su completitud.
+
+Si se quiere replicar los resultados a partir de los [entregables](https://gitlab.com/ipd432/tarea3/-/tree/main/Entregables) (sources+constraints) se deben seguir los siguientes pasos:
+
+1. Crear un proyecto nuevo de Vivado
+2. Importar las fuentes (scrs) y constraints (constr) del proyecto de interés
+3. Si se trata de la versión combinacional, sintetizar con **Default Sinthesys** e implementar con **Default Implementation**
+4. Si se trata de la versión pipelined, sintetizar con **Default Sinthesys** e implementar con **Area_Exploration**
+5. Seguir los pasos de del 2. al 6. de la replicación anterior
