@@ -48,6 +48,7 @@ Para replicar basta con seguir los siguientes pasos:
 4. En Vivado, presionar la opción Generate Bitstream.
 5. Cargar en la tarjeta de desarrollo el archivo generado.
 6. Hacer uso de la interfaz en MATLAB para verificar el funcionamiento.
+7. OJO: Una vez definido el puerto serial, dicha parte del código debe ser comentada o bien usar el comando clear all al comienzo, lo cual no se recomienda ya que aumenta excesivamente el tiempo de ejecución.
 
 
 Adicionalmente, si se desea replicar los reportes y mediciones es necesario revisar los reportes de timing y utilización de recursos de síntesis e implementación.
@@ -62,4 +63,4 @@ Si se quiere replicar los resultados a partir de los [entregables](https://gitla
 2. Importar las fuentes (scrs) y constraints (constr) del proyecto de interés
 3. Si se trata de la versión combinacional, sintetizar con **Default Sinthesys** e implementar con **Default Implementation**
 4. Si se trata de la versión pipelined, sintetizar con **Default Sinthesys** e implementar con **Area_Exploration**
-5. Seguir los pasos de del 2. al 6. de la replicación anterior
+5. Seguir los pasos de del 2. al 7. de la replicación anterior

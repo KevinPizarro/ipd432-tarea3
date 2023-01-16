@@ -2,25 +2,16 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Jan  9 00:57:50 2023
-# Process ID: 17320
-# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18868 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Gitlab\Tarea_3_pipelined\Tarea_3_pipelined.xpr
-# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/vivado.log
-# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined\vivado.jou
+# Start of session at: Sun Jan 15 22:56:17 2023
+# Process ID: 11980
+# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15228 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Git 2\Workspace\Tarea_3_pipelined\Tarea_3_pipelined.xpr
+# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined/vivado.log
+# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined\vivado.jou
 # Running On: LAPTOP-VMLVOQLM, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16505 MB
 #-----------------------------------------------------------
 start_gui
-open_project D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined/Tarea_3_pipelined.xpr
+open_project {D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined/Tarea_3_pipelined.xpr}
 update_compile_order -fileset sources_1
-reset_run synth_final
-launch_runs synth_final -jobs 8
-wait_on_run synth_final
-launch_runs impl_final -jobs 8
-wait_on_run impl_final
-reset_run impl_final
-set_property strategy Area_Explore [get_runs impl_final]
-launch_runs impl_final -jobs 8
-wait_on_run impl_final
-launch_runs impl_final -to_step write_bitstream -jobs 8
-wait_on_run impl_final
+open_run impl_final
+report_utilization -name utilization_1

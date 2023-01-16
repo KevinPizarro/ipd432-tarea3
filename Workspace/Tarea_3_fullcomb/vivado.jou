@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jan 15 22:44:31 2023
+# Process ID: 10368
+# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6820 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Git 2\Workspace\Tarea_3_fullcomb\Tarea_3_fullcomb.xpr
+# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb/vivado.log
+# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb\vivado.jou
+# Running On: LAPTOP-VMLVOQLM, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16505 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb/Tarea_3_fullcomb.xpr}
+update_compile_order -fileset sources_1
+open_run impl_final
+report_utilization -name utilization_1

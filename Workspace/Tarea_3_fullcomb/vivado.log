@@ -2,16 +2,16 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Jan 15 22:56:17 2023
-# Process ID: 11980
-# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15228 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Git 2\Workspace\Tarea_3_pipelined\Tarea_3_pipelined.xpr
-# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined/vivado.log
-# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined\vivado.jou
+# Start of session at: Sun Jan 15 22:44:31 2023
+# Process ID: 10368
+# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6820 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Git 2\Workspace\Tarea_3_fullcomb\Tarea_3_fullcomb.xpr
+# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb/vivado.log
+# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb\vivado.jou
 # Running On: LAPTOP-VMLVOQLM, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16505 MB
 #-----------------------------------------------------------
 start_gui
-open_project {D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_pipelined/Tarea_3_pipelined.xpr}
+open_project {D:/Archivos/Documentos/Universidad/2022.2/IPD432/Git 2/Workspace/Tarea_3_fullcomb/Tarea_3_fullcomb.xpr}
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -55,38 +55,39 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_pipelined' since last save.
+INFO: [Project 1-313] Project file moved from 'D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_3_fullcomb' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 1602.258 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1599.008 ; gain = 0.000
 update_compile_order -fileset sources_1
 open_run impl_final
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1779.945 ; gain = 13.133
-INFO: [Netlist 29-17] Analyzing 15469 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1647.680 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16094 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  tcl.collectionResultDisplayLimit
 INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2870.160 ; gain = 39.070
+Read XDEF Files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2630.680 ; gain = 68.383
 Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2870.160 ; gain = 39.070
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2870.160 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2630.680 ; gain = 68.383
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2630.680 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 3002.410 ; gain = 1400.152
-open_report: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 3115.695 ; gain = 90.414
+open_run: Time (s): cpu = 00:00:47 ; elapsed = 00:00:42 . Memory (MB): peak = 2766.754 ; gain = 1167.746
+open_report: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 2890.047 ; gain = 102.434
 report_utilization -name utilization_1
-report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3429.066 ; gain = 21.551
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 16 00:04:18 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 15 22:55:18 2023...
